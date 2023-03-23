@@ -1,0 +1,44 @@
+#Footer {
+    margin-top: 15vh;
+    background: black;
+    padding: 2vw;
+
+    .social_medias {
+        margin-top: 5vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 10vw;
+    }
+
+    h4 {
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    ul li {
+        justify-content: flex-start;
+        align-items: flex-start;
+        list-style: none;
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    span {
+        font-size: 12px;
+    }
+
+    p {
+        color: #848484;
+        font-size: 12px;
+    }
+
+    .footer_text {
+        max-width: 30vw;
+    }
+}

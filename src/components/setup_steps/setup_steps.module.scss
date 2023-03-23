@@ -1,0 +1,119 @@
+$primary-color: #72c3c7;
+$secondary-color: #141414;
+$third-color: #848484;
+$border-radius: 15px;
+$font-size-h2: 2rem; 
+$font-size-h3: 18px;
+$font-size-h4: 24px; 
+$font-family-h2: Podkova, sans-serif;
+
+#SetupSteps {
+  margin: 3rem 0;
+  text-align: left;
+  margin-top: 15vh;
+
+  h2 {
+    font-size: 32px;
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+  }
+
+  h3 {
+    font-family: $font-family-h2;
+    font-size: 18px;
+    margin-bottom: 2.5rem;
+    color: $third-color;
+    max-width: 50vw;
+
+    b {
+      color: white;
+    }
+  }
+
+  h4 {
+    text-align: left;
+    font-family: $font-family-h2;
+    font-size: $font-size-h4;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #141414;
+    padding: 30px;
+    border-radius: 15px;
+    height: 530px;
+
+    p {
+      font-size: 12px;
+    }
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .col {
+      flex-basis: 30%;
+      margin-bottom: 3rem;
+
+      h4 {
+        color: $primary-color;
+        font-size: 1.375rem; // equivalent to 22px
+        margin-bottom: 1rem;
+      }
+
+      p {
+        color: white;
+        font-size: 1.125rem; // equivalent to 18px
+        line-height: 1.5;
+        margin-bottom: 0;
+      }
+    }
+
+    .col:first-child,
+    .col:nth-child(2),
+    .col:last-child {
+      flex-basis: 100%;
+    }
+
+    .col:first-child {
+      margin-bottom: 2rem;
+    }
+
+    .col:last-child {
+      margin-top: 3rem;
+    }
+
+    .col:not(:first-child) {
+      margin-left: 1.5rem;
+    }
+  }
+
+  img {
+    display: block;
+    margin-bottom: 1rem;
+    max-width: 100%;
+  }
+
+  .step-1 {
+    background-color: $secondary-color;
+    border-radius: $border-radius;
+    padding: 2rem;
+  }
+
+  .step-2 {
+    background-color: $secondary-color;
+    border-radius: $border-radius;
+    padding: 2rem;
+  }
+
+  .step-3 {
+    background-color: $secondary-color;
+    border-radius: $border-radius;
+    padding: 2rem;
+  }
+}
