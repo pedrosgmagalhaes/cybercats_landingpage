@@ -8,8 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 60vh;
-    max-width: 45vw;
+    height: 40vh;
   }
 
   .hero-content {
@@ -33,23 +32,48 @@
   }
 
   .hero-image {
-    width: 50%;
-    max-width: 500px;
-    margin-left: 2rem;
+    animation: slidein 2s ease infinite alternate;
+  }
+
+  @keyframes slidein {
+    from {
+      transform: translateX(-5px);
+    }
+
+    to {
+      transform: translateX(5px);
+    }
   }
 
   .button {
-    background: #72C3C7;
-    border: 1px solid #FFFFFF;
-    font-family: 'Poppins';
+    background: #72c3c7;
+    border: 1px solid #ffffff;
+    font-family: "Poppins";
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     width: 232px;
     height: 60px;
-    color: #1F1F1F;
+    color: #1f1f1f;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
+    transition: all 0.3s ease;
   }
-  
+
+  .buttonHover:hover {
+    animation: pulse 1s infinite;
+    background: #ffffff;
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+  }
 }

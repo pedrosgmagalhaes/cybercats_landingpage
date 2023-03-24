@@ -24,11 +24,11 @@ const Whitelist = () => {
                             Connect your wallet and score early access with our whitelist.
                             Users will snag an NFT to launch test-drive URL NFTs.
                         </p>
-                         <button className={styles.button}>Whitelist</button>
-                    </Col>
-                </Row>
-            </Container>
-        </section>
+                        <button className={`${styles.button} ${styles.buttonHover}`}>Whitelist</button>
+                </Col>
+            </Row>
+        </Container>
+        </section >
     );
 };
 

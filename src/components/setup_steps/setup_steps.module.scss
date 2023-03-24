@@ -1,12 +1,3 @@
-$primary-color: #72c3c7;
-$secondary-color: #141414;
-$third-color: #848484;
-$border-radius: 15px;
-$font-size-h2: 2rem; 
-$font-size-h3: 18px;
-$font-size-h4: 24px; 
-$font-family-h2: Podkova, sans-serif;
-
 #SetupSteps {
   margin: 3rem 0;
   text-align: left;
@@ -19,10 +10,10 @@ $font-family-h2: Podkova, sans-serif;
   }
 
   h3 {
-    font-family: $font-family-h2;
+    font-family: Podkova, sans-serif;
     font-size: 18px;
     margin-bottom: 2.5rem;
-    color: $third-color;
+    color: #848484;
     max-width: 50vw;
 
     b {
@@ -32,8 +23,8 @@ $font-family-h2: Podkova, sans-serif;
 
   h4 {
     text-align: left;
-    font-family: $font-family-h2;
-    font-size: $font-size-h4;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
   }
 
   .card {
@@ -45,10 +36,51 @@ $font-family-h2: Podkova, sans-serif;
     padding: 30px;
     border-radius: 15px;
     height: 530px;
+    animation: shakeHead 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s 1;
+
+    @keyframes shakeHead {
+      0% {
+        transform: rotate(0deg);
+      }
+      20% {
+        transform: rotate(2.5deg);
+      }
+      40% {
+        transform: rotate(-2.5deg);
+      }
+      60% {
+        transform: rotate(1.5deg);
+      }
+      80% {
+        transform: rotate(-1.5deg);
+      }
+      100% {
+        transform: rotate(0deg);
+      }
+    }
 
     p {
       font-size: 12px;
     }
+
+    :nth-child(1) {
+      animation: shakeHead 3s ease-in-out infinite;
+      animation-delay: 3s;
+    }
+
+    :nth-child(2) {
+      animation: shakeHead 3.5s ease-in-out infinite;
+      animation-delay: 2s;
+    }
+
+    :nth-child(3) {
+      animation: shakeHead 5s ease-in-out infinite;
+      animation-delay: 3s;
+    }
+  }
+
+  .card h4 b {
+    animation: none;
   }
 
   .row {
@@ -61,14 +93,14 @@ $font-family-h2: Podkova, sans-serif;
       margin-bottom: 3rem;
 
       h4 {
-        color: $primary-color;
-        font-size: 1.375rem; // equivalent to 22px
+        color: #72c3c7;
+        font-size: 1.375rem;
         margin-bottom: 1rem;
       }
 
       p {
         color: white;
-        font-size: 1.125rem; // equivalent to 18px
+        font-size: 1.125rem;
         line-height: 1.5;
         margin-bottom: 0;
       }
@@ -100,20 +132,20 @@ $font-family-h2: Podkova, sans-serif;
   }
 
   .step-1 {
-    background-color: $secondary-color;
-    border-radius: $border-radius;
+    background-color: #141414;
+    border-radius: 15px;
     padding: 2rem;
   }
 
   .step-2 {
-    background-color: $secondary-color;
-    border-radius: $border-radius;
+    background-color: #141414;
+    border-radius: 15px;
     padding: 2rem;
   }
 
   .step-3 {
-    background-color: $secondary-color;
-    border-radius: $border-radius;
+    background-color: #141414;
+    border-radius: 15px;
     padding: 2rem;
   }
 }

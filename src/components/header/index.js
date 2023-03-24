@@ -3,10 +3,16 @@ import { Navbar, Nav, Container } from 'react-bootstrap';
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from "./header.module.scss";
+import Head from 'next/head';
+
 
 const Header = () => {
     return (
         <section >
+            <Head>
+                <title>cybercats - create urls dynamic nfts</title>
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
             <Navbar id={styles.Navbar} variant="dark" expand="lg">
                 <Container>
                     <Link href="/" passHref>

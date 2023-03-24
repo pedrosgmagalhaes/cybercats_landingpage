@@ -12,8 +12,47 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    animation-name: shakex;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
   }
   
+
+  @keyframes shakex {
+    0% {
+      transform: translateX(0);
+    }
+    10% {
+      transform: translateX(-5px);
+    }
+    20% {
+      transform: translateX(5px);
+    }
+    30% {
+      transform: translateX(-5px);
+    }
+    40% {
+      transform: translateX(5px);
+    }
+    50% {
+      transform: translateX(-5px);
+    }
+    60% {
+      transform: translateX(5px);
+    }
+    70% {
+      transform: translateX(-5px);
+    }
+    80% {
+      transform: translateX(5px);
+    }
+    90% {
+      transform: translateX(-5px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
 
   .formFeature {
     display: flex;
@@ -41,15 +80,34 @@
 
   .button {
     background: transparent;
-    border: 1px solid #FFFFFF;
-    font-family: 'Poppins';
+    border: 1px solid #ffffff;
+    font-family: "Poppins";
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     width: 200px;
     height: 60px;
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 14px;
     font-weight: bold;
     cursor: pointer;
+    transition: all 0.3s ease;
   }
+
+  .buttonHover:hover {
+    animation: pulse 1s infinite;
+    background: #72c3c7;
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+  }
+
 }

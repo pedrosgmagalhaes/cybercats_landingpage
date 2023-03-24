@@ -13,11 +13,10 @@
     margin: 0;
     font-size: 18px;
     font-family: "Poppins", sans-serif;
-    margin-bottom: 10vh;
     font-weight: 400;
 
     b {
-        color: #ffffff;
+      color: #ffffff;
     }
   }
 
@@ -38,4 +37,43 @@
     margin-top: 20px;
   }
 
+  .visualcatLeft {
+    height: 800px;
+    background-image: url("/assets/images/retangulo.svg");
+    background-repeat: no-repeat;
+
+    h3 {
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+    .textContainer {
+     margin: 0;
+     padding: 0;
+    }
+  }
+
+  .visualcatMiddle {
+    background-image: url("/assets/images/triangulo.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+  }
+
+  .visualcatRight {
+    height: 300px;
+    background-size: cover;
+    transform: scaleX(-1);
+    background-image: url("/assets/images/retangulo.svg");
+    background-repeat: no-repeat;
+  }
+
+  .invert {
+    transform: scaleX(-1);
+  }
 }
